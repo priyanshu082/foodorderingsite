@@ -1,4 +1,4 @@
-*{
+ *{       /*this is used to reset the default setting of web page */
     margin:0;
     padding: 0;
  }
@@ -10,7 +10,6 @@
  /* naviagtion bar */
  #navbar{
     display:flex;
-    background-color: black;
  }
 
  /* naviagtion bar logo and image */
@@ -22,9 +21,25 @@
     height: 50px;
     width: 50px;
  }
+ #navbar {
+   position: relative; /*what is the difference between relative and absolute position*/
+ }
  #navbar ul{
     display: flex;
     padding-top: 20px;
+    font-family: 'Baloo Bhaijaan 2',cursive;
+ }
+ #navbar::before{   /*what is this???*/
+   content: "";
+   background-color: black;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   height:100%;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.4;
+   
  }
  #navbar ul li{
     list-style: none;
@@ -38,7 +53,7 @@
        color: white;
  } 
  #navbar ul li a:hover{
-    color: yellowgreen;
+    color: black;
     background-color: white;
  }
 
@@ -47,6 +62,77 @@
     display: flex;
     flex-direction: column;
     padding: 3px 200px;
+    height: 380px;
     justify-content: center;
     align-items: center;
  }
+ #home::before{   /*what is this???*/
+       content: "";
+       position: absolute;
+       background: url(image/bg1.jpg) no-repeat center center/cover;
+       top: 0px;
+       left: 0px;
+       height:65%;
+       width: 100%;
+       z-index: -1;
+       opacity:0.8;
+ }
+
+ #home h1{
+   color: white;
+   text-align: center;
+   font-family: 'Baloo 2', cursive;
+
+ }
+ #home p{
+   color: white;
+   text-align: center;
+   font-size: 1.5rem;
+ }
+
+ /* services center */
+ #services{
+   margin: 34px;
+   display: flex;
+ }
+ #services .box{
+   border:2px solid brown;
+   padding: 34px;
+   margin:3px 6px;
+   border-radius: 28px ;
+   background: rgb(229, 227, 227);
+ }
+ #services .box img{
+   height: 160px;
+   margin:auto;
+   display:block; /*what is dsiplay block */
+ }
+ #services
+ #services
+ #services
+ #services
+
+ /* utility class */
+.h-primary{
+   font: size 3.8rem;
+   padding: 12px;
+   font-family: 'Baloo 2', cursive;
+}
+.h-secondary{
+   font-size: 2.8rem ;
+   padding: 12px;
+   font-family: 'Baloo 2', cursive;
+}
+.btn{
+   cursor: pointer;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color:rgb(185, 159, 127);
+    color:black;
+    margin: 17px ;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.center{
+   text-align: center;
+}
