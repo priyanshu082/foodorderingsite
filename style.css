@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding: 0;
+ }
+
+ /* css variables */
+ :root{
+    --navbar-height:59px;
+ }
+ /* naviagtion bar */
+ #navbar{
+    display:flex;
+ }
+
+ /* naviagtion bar logo and image */
+ #logo{
+    /* margin:35px 45px; */
+ }
+ #logo img{
+    /* margin: 5px 5px; */
+    height: 50px;
+    width: 50px;
+ }
+
+ /* naviagtion bar list styling */
