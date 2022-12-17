@@ -10,16 +10,43 @@
  /* naviagtion bar */
  #navbar{
     display:flex;
+    background-color: black;
  }
 
  /* naviagtion bar logo and image */
  #logo{
-    /* margin:35px 45px; */
+     margin:10px 34px; 
  }
  #logo img{
-    /* margin: 5px 5px; */
+    /* margin: 3px 6px; */
     height: 50px;
     width: 50px;
  }
+ #navbar ul{
+    display: flex;
+    padding-top: 20px;
+ }
+ #navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+ }
+ #navbar ul li a{      /*to make hover effect on everything of list item       */
+       display: block;
+       padding: 3px 22px;
+       border-radius:20px;
+       text-decoration: none; 
+       color: white;
+ } 
+ #navbar ul li a:hover{
+    color: yellowgreen;
+    background-color: white;
+ }
 
- /* naviagtion bar list styling */
+ /* home section */
+ #home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+ }
