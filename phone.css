@@ -24,7 +24,11 @@
 #services{
     flex-direction: column;
 }
-
+#services .box{
+    padding: 14px;
+    margin: 2px 15px;
+    margin-bottom: 20px;
+}
 
 /* client section */
 #clients{
