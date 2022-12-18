@@ -110,7 +110,7 @@
  /* client sections */
  #clients-section{
    position: relative;
-height: 344px;
+
  }
 
  #clients-section::before{
@@ -154,7 +154,7 @@ height: 344px;
 }
 #contact-box form{
    width: 40%;
-   padding: ;
+   padding: 10px;
 }
 #contact-box label{
    font-size: 1.3rem;
@@ -197,4 +197,7 @@ footer{
 }
 .center{
    text-align: center;
+}
+body{
+   background-color: rgb(246, 239, 239);
 }
